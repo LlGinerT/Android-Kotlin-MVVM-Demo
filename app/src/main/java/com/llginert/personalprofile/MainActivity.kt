@@ -16,6 +16,20 @@ import com.llginert.personalprofile.ui.profile.ProfileViewModel
 import com.llginert.personalprofile.ui.screens.UserProfileScreen
 import com.llginert.personalprofile.ui.theme.PersonalProfileTheme
 
+/*
+@Composable
+fun AppNavHost() {
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination = "home") {
+        composable("home") //{ HomeScreen(navController) }
+            composable("details/{accountId}") { backStackEntry ->
+                val accountId = backStackEntry.arguments?.getString("accountId") ?: "Unknown"
+                //DetailsScreen(accountId)
+            }
+        }
+    }
+*/
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
